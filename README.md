@@ -53,4 +53,45 @@ discount: number
 	};
 </pre>
 
+**Union:**
+We can use union when we use a variable for different types
+Example:
+<pre>
+	let userId: string | number;
+	userId = "UserId_123";
+	userId = 42;
+
+	function safeSquare(val : string | number) : number
+	{
+		if(typeof val == "string"){
+			val = parseInt(val, 10);
+		}
+		return val * val;
+	}
+</pre>
+
+**Optional Parameters:**
+
+We can use optional parameters in a function parameter using "?" after the variable name
+Example:
+<pre>
+	function greet(name: string, title?:string) : string
+	{
+		if(title){
+			return 'Hello, ${title} ${name}!';
+		}
+		return 'Hello ${name}!';
+	}
+</pre>
+
+**Optional with default Parameters:**
+
+We can use optional with default parameters in a function parameter by specifying the default value to a parameter. No need to place a "?" after the variable name
+Example:
+<pre>
+	function greet(name: string, title :string= "Mr.") : string
+	{
+			return 'Hello, ${title} ${name}!';
+	}
+</pre>
 

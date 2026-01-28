@@ -53,6 +53,29 @@ discount: number
 	};
 </pre>
 
+Type can also be used as eNum
+
+Example:
+<pre>
+	export type Priority = "Low" | "Medium" | "High" | "Critical"
+	export function setPriority(level : Priority)
+	{
+		switch(level){
+			case "Low":
+				return 0;
+			case "Medium":
+				return 1;
+			case "High":
+				return 2;
+			case "Critical" :
+				return 3:
+			case default:
+				return -1;
+		}
+	}
+</pre>
+
+
 **Union:**
 We can use union when we use a variable for different types
 Example:

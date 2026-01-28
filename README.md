@@ -12,10 +12,8 @@ Example :
 	const myName : string ="Newman Croos"
 </pre>
 
-**
 
 ## Function
-
 In a function we shoulduse explicit types input parameters so that others would easily understand the function but we can user explicit return type or Inferred return types. explicit return type is a good practice.
 If a function return nothing so we can use **void**  as return type
 Explicit return type : 

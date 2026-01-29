@@ -75,6 +75,23 @@ Example:
 	}
 </pre>
 
+We can use **type**  to create another type with some modification on all element of the type 
+
+Example:
+<pre>
+	type Class = "wizard" | "warrior" | "rogu";
+	type Hero = 'elf ${Class}';
+//Output is Type Hero =  "elf wizard" | "elf warrior" | "elfrogu";    //Loopthrough all element add the prefix
+</pre>
+same way we can combine multiple types 
+Example:
+<pre>
+		type Class = "wizard" | "warrior" | "rogu";
+		type Race = "elf" | "huma" | "dwarf";
+		type Hero = 'Hero: ${Race} ${Class};
+		//Output : Hero: elf wizard | Hero: elf warrior | Hero: elf orgu | Hero: human wizard | Hero: human warrior| ...
+</pre>  
+
 
 **Union:**
 We can use union when we use a variable for different types

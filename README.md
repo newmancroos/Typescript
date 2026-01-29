@@ -154,3 +154,15 @@ function assignLightsaberColor(name : string, colors: Array<string>) : void{
 
 }
 </pre>
+
+
+**Rest Parameters:**
+
+If we want to pass n number of paramter we can use it
+Example:
+<pre>
+	function gatherParty (partyname:string, ...adventure:string[]) : string{
+		let msg = '${parttyName} consist of : ${adventure.join(", ")'};
+		console.log(msg);
+	}
+</pre>

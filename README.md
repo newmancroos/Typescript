@@ -135,3 +135,22 @@ Example:
 	}
 </pre>
 
+
+## Array
+
+by adding [] to the end of the datatype we can make a variable array
+Example:
+<pre>
+	let myNames : string[];
+	let objects : (string | number)[];
+export function averageScore(ratings: (string | number)[]) {
+	if(ratings.length == 0) return 0;
+	return ratngs.reduce(rating,sum) => {
+		return rating * sum
+	},0)/ rating.length;
+} 
+//We can also using Array keyword
+function assignLightsaberColor(name : string, colors: Array<string>) : void{
+
+}
+</pre>

@@ -166,3 +166,13 @@ Example:
 		console.log(msg);
 	}
 </pre>
+
+## Object Literal Types:
+
+In Type script object declare as type as follows
+<pre>
+	export type Mail = {
+		firstName: string,
+		lastName: string
+	}
+</pre>

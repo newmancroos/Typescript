@@ -179,7 +179,7 @@ In Type script object declare as type as follows
 </pre>
 
 
-**Object Union :**
+**Discriminated Union :**
 
 	<pre>
 		type MultipleChoiceLession = {

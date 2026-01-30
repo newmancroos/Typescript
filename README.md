@@ -173,6 +173,7 @@ In Type script object declare as type as follows
 <pre>
 	export type Mail = {
 		firstName: string,
-		lastName: string
+		lastName: string,
+		middleName?: string   //Optional property
 	}
 </pre>

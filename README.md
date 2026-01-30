@@ -177,3 +177,33 @@ In Type script object declare as type as follows
 		middleName?: string   //Optional property
 	}
 </pre>
+
+
+**Object Union :**
+
+	<pre>
+		type MultipleChoiceLession = {
+			kind: "multiple-choice",  //Discriminant property
+			question: string,
+			studentAnswer: sytring,
+			correctAnswer: string
+		}
+
+		type CodingLession = {
+			kind: "coding", //Discriminant property
+			question: string,
+			studentCode: sytring,
+			solutionCode: string
+		}
+
+		type lesson = MultipleChoiceLession  | CodingLession;
+		function iscorrect(lesson:Lesson){
+			switch (lesson.kind){
+				case "multiple-choice":
+					return lesson.studentAnswer === lesson.correctAnswer;
+				case "coding":
+					return lesson.studentCode === lession.solutionCode;
+			}
+		}
+	</pre>
+	

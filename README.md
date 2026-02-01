@@ -207,7 +207,7 @@ In Type script object declare as type as follows
 		}
 	</pre>
 	
-**Sets:**
+## Sets:
 It is equivalent to HashSet, It will always have unique values/element.
 <pre>
 	const set =new Set<string>()
@@ -215,4 +215,13 @@ It is equivalent to HashSet, It will always have unique values/element.
 	set.add("Nithin");
 	set.add("Newman");
 	// second Newman will be removed
+</pre>
+
+<pre>
+		export function findNumUniqueLabels(formattedAddresses : string[]) : number
+		{
+			const set = new Set(formattedAddresses );
+			return set.size;  //any duplicate values will be removed and unique values will be return
+										// also Set has size not length
+		}
 </pre>

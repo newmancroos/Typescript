@@ -225,3 +225,16 @@ It is equivalent to HashSet, It will always have unique values/element.
 										// also Set has size not length
 		}
 </pre>
+
+
+## Map:
+
+Map is dictionary type, it accespt Key value paire
+
+<pre>
+		const map = new Map<string, number>();
+		map.set("Newman", 1);
+		map.set("Nithin", 2);
+		var empId = map.get("Newman");  //get a element from Map using its key 
+</pre>
+

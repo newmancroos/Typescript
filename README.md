@@ -207,3 +207,12 @@ In Type script object declare as type as follows
 		}
 	</pre>
 	
+**Sets:**
+It is equivalent to HashSet, It will always have unique values/element.
+<pre>
+	const set =new Set<string>()
+	set.add("Newman");
+	set.add("Nithin");
+	set.add("Newman");
+	// second Newman will be removed
+</pre>

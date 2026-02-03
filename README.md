@@ -263,6 +263,7 @@ Example1:
 			Express: 1,
 			SuperExpress : 2
 		} 
+		console.log(a["Normal"]); // 0
 </pre>
 
 Example2:

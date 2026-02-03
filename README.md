@@ -255,14 +255,18 @@ Syntax :
 
 Example1:
 <pre>
-		export type MailPreferences = {
-			[key : string] : number
-		};
-		const a MailPreferences = {
+	//export type MailPreferences = {
+	//			[key : string] : number
+	//		};
+	export type MailPreferences = Record<string, number>;
+	
+	//Both declaration are valid 
+		const a: MailPreferences = {
 			Normal : 0,
 			Express: 1,
 			SuperExpress : 2
-		} 
+		};
+	
 		console.log(a["Normal"]); // 0
 </pre>
 

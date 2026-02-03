@@ -238,3 +238,46 @@ Map is dictionary type, it accespt Key value paire
 		var empId = map.get("Newman");  //get a element from Map using its key 
 </pre>
 
+## Dynamic Key:
+
+Sometimes, you won't know all of an object's property names in advance. For example, say you'r building a customer management system where employees can add custome Key/Valye paires to the customer recodes, like 
+ * favoriteColoe : "Blues"
+ * favoriteFood : "Pizza"
+you can't know what the user will add ahead of time, you still want to model the data in your program.
+
+Syntax :
+<pre>
+	type UserMetrices = {
+		[key : string] : number;
+		//here We need to give a key as string and value as number
+	}
+</pre>
+
+Example1:
+<pre>
+		export type MailPreferences = {
+			[key : string] : number
+		};
+		const a MailPreferences = {
+			Normal : 0,
+			Express: 1,
+			SuperExpress : 2
+		} 
+</pre>
+
+Example2:
+<pre>
+interface Dictionary<T> {
+  [key: string]: T; // The key can be any string, and the value will be of type T
+}
+const userScores: Dictionary<number> = {
+  alice: 100,
+  bob: 120,
+  carol: 90,
+};
+
+// Accessing and assigning dynamic keys using bracket notation
+const userName: string = "dave";
+userScores[userName] = 80; // Valid assignment
+console.log(userScores["alice"]); // Output: 100
+</pre>

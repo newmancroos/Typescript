@@ -258,7 +258,7 @@ Example1:
 	//export type MailPreferences = {
 	//			[key : string] : number
 	//		};
-	export type MailPreferences = Record<string, number>;
+	export type MailPreferences = Record&lt;string, number&gt;;
 	
 	//Both declaration are valid 
 		const a: MailPreferences = {
@@ -272,7 +272,7 @@ Example1:
 
 Example2:
 <pre>
-interface Dictionary<T> {
+interface Dictionary&lt;T&gt; {
   [key: string]: T; // The key can be any string, and the value will be of type T
 }
 const userScores: Dictionary<number> = {
@@ -286,3 +286,4 @@ const userName: string = "dave";
 userScores[userName] = 80; // Valid assignment
 console.log(userScores["alice"]); // Output: 100
 </pre>
+

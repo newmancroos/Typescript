@@ -287,3 +287,20 @@ userScores[userName] = 80; // Valid assignment
 console.log(userScores["alice"]); // Output: 100
 </pre>
 
+**Dynamic Property with default property**
+Example:
+<pre>
+		type Formdata={
+			[field: string]:string;
+			email: string;
+			password : string
+	};
+
+	const a : Formdata = {
+	    field1:"field1",
+	    email: "newmancroos@gmail.com",
+	    password: "test"
+	};
+	
+	console.log(a["field1"]); // 0
+</pre>
